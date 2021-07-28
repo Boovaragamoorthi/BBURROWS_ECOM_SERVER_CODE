@@ -28,4 +28,4 @@ app.use('/api', LoginAuth.routes);
 app.use('/api', RazerPay.routes);
 app.use('/api', DeliveryAddress.routes);
 
-app.listen(port, () => console.log(`server is listening on url`,port));
+app.listen(process.env.PORT || 8080, () => console.log(`server is listening on url`));
